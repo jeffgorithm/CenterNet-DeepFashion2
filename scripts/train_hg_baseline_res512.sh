@@ -1,0 +1,13 @@
+python main.py ctdet \
+--dataset deepfashion2 \
+--exp_id deepfashion2_hg_res512_baseline \
+--gpus 0,2,3 \
+--arch hourglass \
+--input_res 512 \
+--num_epochs 30 \
+--lr_step 20,25 \
+--batch_size 14 \
+--val_intervals 5 \
+--num_workers 8 \
+--neptune \
+--neptune-path ../neptune.txt
